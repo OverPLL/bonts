@@ -13,7 +13,7 @@ import inspect
 from contextlib import redirect_stdout
 from discord.ext import commands
 import json
-bot = commands.Bot(command_prefix=commands.when_mentioned_or('+'), description="A selfbot made by L3NNY#0849\n\nHelp Commands", owner_id=411683912729755649)
+bot = commands.Bot(command_prefix=commands.when_mentioned_or('+'), description="HeadCrab Bot\n\nHelp Commands", owner_id=373565052831137802)
 
 
 @bot.command()
@@ -29,26 +29,26 @@ async def ping(ctx):
 #async def uptime(ctx):
  #   """Get the bot's uptime"""
  #   color = discord.Color(value=0x00ff00)
- #   em = discord.Embed(color=color, title='Selfbot Uptime')
+ #   em = discord.Embed(color=color, title='HCbot Uptime')
  #   em.description = f"{str(timedelta_str(datetime.datetime.now() - start_time)))"
  #   await ctx.send(embed=em)
 
     
 @bot.command()
 async def support(ctx):
-    """Get help with the selfbot"""
+    """Get help with the HCbot"""
     color = discord.Color(value=0x00ff00)
     em = discord.Embed(color=color, title='Need help? Join!')
-    em.description = f"https://discord.gg/FEPNu3A"
+    em.description = f"https://discord.gg/RngC6pK"
     await ctx.send(embed=em)
     
     
 @bot.command()
 async def info(ctx):
-    """Get infomation about the selfbot"""
+    """Get infomation about the HCbot"""
     color = discord.Color(value=0x00ff00)
     em = discord.Embed(color=color, title='Infomation:')
-    em.description = f"**Creator:** L3NNY#0849\n**Ping:**{bot.latency * 1000:.4f}\n**Servers you are in:** {len(bot.guilds)}"
+    em.description = f"**Creator:** OverPL\n**Ping:**{bot.latency * 1000:.4f}\n**Servers you are in:** {len(bot.guilds)}"
     await ctx.send(embed=em)
                         
 
